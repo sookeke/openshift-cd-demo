@@ -86,7 +86,7 @@ objects:
         - name: ENABLE_QUAY
           value: ${ENABLE_QUAY}
         jenkinsfile: |-
-          def mvnCmd = 'mvn -s configuration/cicd-settings-nexus3.xml'
+          def version, mvnCmd = "mvn -s configuration/cicd-settings-nexus3.xml"
 
           pipeline {
             agent {
